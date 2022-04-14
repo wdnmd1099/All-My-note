@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id=xxx src="/图片集成/故意失败.jpg" alt="图片的描述">
+    <!-- 下面是监听图片是否成功加载，如果不成功加载，则加载404图片 -->
+    <script>
+        xxx.onload = function(){
+            console.log('加载成功');
+        };
+        xxx.onerror = function(){
+            console.log('野兽先辈加载失败');
+            xxx.src = '/图片集成/404.png';
+        };
+        
+    </script>
+</body>
+</html>
