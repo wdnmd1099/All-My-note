@@ -22,3 +22,5 @@ console.log($('dgfhh').jquery)
 let div1=document.createElement('div')
 console.log(div1)
 $('.tennki').append(div1)
+
+

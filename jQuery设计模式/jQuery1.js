@@ -1,4 +1,4 @@
-//这是课件完全体
+//这是课件完全体  
 
 
 window.$ = window.jQuery = function(selectorOrArrayOrTemplate) {
