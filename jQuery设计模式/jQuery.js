@@ -33,6 +33,6 @@ window.$ = window.jQuery = function(selectorOrArray) {
     },
     end() {
       return this.oldApi; 
-    }
+    },
   };
 
