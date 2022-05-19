@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+
+
+        .container {
+            display: flex;
+            border: 1px solid red;
+            justify-content: space-between;
+            background: grey;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul>li {
+            padding: 8px;
+        }
+
+        .touxiang {
+            margin-right: 10px;
+            padding: 8px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo>img {
+            height: 30px;
+            max-width: 100%;
+            vertical-align: middle;
+        }
+
+
+
+
+
+
+
+
+
+        .sanhang {
+            display: flex;
+            width: 1600px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border: 1px solid rgb(143, 19, 10)(124, 44, 44);
+        }
+
+        .left {
+            background: blue;
+            width: 200px;
+            border: 1px solid rgb(143, 19, 10)(124, 44, 44);
+        }
+
+        .middle {
+            background: blueviolet;
+
+            flex-grow: 1;
+            border: 1px solid rgb(0, 0, 0)(124, 44, 44);
+        }
+
+        .right {
+            background: rgb(238, 0, 52);
+            width: 100px;
+            border: 1px solid rgb(143, 19, 10)(124, 44, 44);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .imges {
+            outline: 1px solid red;
+            display: flex;
+            width: 1600px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imgs {
+            width: 310px;
+            height: 310px;
+            margin-left: auto;
+            margin-right: auto;
+
+            margin-bottom: 10px;
+            outline: 1px solid red;
+        }
+
+        .imges>.x {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -5px;
+            margin-right: -5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <div class="logo">
+            <img src="https://static.xiedaimala.com/xdml/cdn/assets/white-logo-1a762b425df663fbccee710fe08d66951cea2fbc0a0350f03446ab30462e739f.png"
+                alt="">
+        </div>
+        <ul>
+            <li>导航1</li>
+            <li>导航2</li>
+            <li>导航3</li>
+            <li>导航4</li>
+        </ul>
+        <div class="touxiang">头像</div>
+
+
+    </header>
+
+
+
+
+    <div class="sanhang">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+    </div>
+
+
+
+
+    <div class="imges">
+        <div class="x">
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+            <div class="imgs"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

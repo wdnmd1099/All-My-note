@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>red heart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .D {
+
+            display: inline-block;
+            margin: 100px;
+            position: relative;
+            transition: all 1s;
+            animation: 600ms XXX infinite alternate;
+        }
+
+
+        @keyframes XXX {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.5);
+            }
+        }
+
+        .a {
+
+
+            border: 1px solid red;
+            background: red;
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+        }
+
+        .b {
+            border: 1px solid red;
+            position: absolute;
+            background: red;
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+            bottom: 50px;
+            left: -50px;
+            border-radius: 50% 0 0 50%;
+
+
+        }
+
+        .c {
+            border: 1px solid red;
+            position: absolute;
+            background: red;
+            width: 100px;
+            height: 100px;
+            transform: rotate(45deg);
+            bottom: 50px;
+            left: 50px;
+            border-radius: 50% 50% 0% 0%;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="D">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+
+</html>

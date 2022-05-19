@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饥人谷CSS进阶（宽度与高度-div的高度知识点）</title>
+    <style>
+        #字体设计影响行高 {
+            border:
+                /*没有高度的div如果有字的话
+            会按字体设计的建议高度来默认增加相应
+            的行高来适配以显示字体，不同的字体有不同
+            的建议行高，是由字体设计师决定的*/
+                1px solid red;
+            /*此时使用系统默认字体行高为21*/
+        }
+
+        #字体设计影响行高02 {
+            border: 1px solid red;
+            font-family: Tahoma;
+            /*此时使用tahoma字体行高为19*/
+        }
+
+        span {
+            border: solid red 1px;
+            display: inline-block;
+            width: 6em;
+            text-align: justify;
+            line-height: 21px;
+            /*line-height 属性设置行间的距离（行高）。不能使用负值*/
+            height: 21px;
+            overflow: hidden;
+            /* text-align: justify; 这行是使文字前后对齐的指令
+            但是只有在有多行文字时才会生效*/
+        }
+
+        span::after {
+            /*::after是css3的写法，:after是css2的写法，效果虽然相同，但是用css3的写法比较好*/
+            content: '';
+            display: inline-block;
+            width: 100%;
+            /*上面四行是往span的字下面加了一行的意思，下面加border是让加的
+            那行可以看到，下面加了一行，上面原本一行就变成了两行
+            所以justify就可以生效，使需要前后对齐的文字对齐了*/
+            border: green 1px;
+        }
+
+        #对齐-wapper {
+            border: solid green 1px;
+        }
+
+
+        ul {
+            /*去掉ul的小圆点*/
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            /*这个border是为了包裹住选项条幅
+            加特效能更美观*/
+            border: solid blue 1px;
+        }
+
+        ul>li {
+            /**display: inline-block;
+            不要用这个，原因我未能理解*/
+            float: left;
+            /*浮动元素不遵守inline元素的区别*/
+            border: solid red 1px;
+        }
+
+        .clearfix::after {
+            /*这个部分是为了能让蓝色线包裹住
+            导航条幅而写的*/
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        #超出显示界限>div:nth-child(3) {
+            border: solid red 1px;
+            /*冷知识：<br>也算一个元素，在选择
+            顺序上要把它也加入去
+            另外在选择子元素时可以通过直接引用
+            ID来选取
+            比如： #超出显示界限>#超出显示界限02{
+                border: solid red 1px;
+            }*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="字体设计影响行高">
+        1
+    </div>
+    <div id="字体设计影响行高02">
+        2
+    </div>
+
+    <div id="&nbsp是加空格">
+        1 2<br>
+        <!--无论加多少个空格都只显示一个空格，想要强制多加空格就用&nbsp-->
+        3&nbsp&nbsp&nbsp&nbsp&nbsp4
+        <br><br><br><br>
+    </div>
+
+
+    <div id="对齐-wapper">
+        <span id="文字的前后对齐">
+            对齐
+        </span><br>
+        <span id="文字的前后对齐02">
+            文字前后对齐
+        </span>
+    </div>
+
+    <br><br><br><br><br><br>
+
+
+
+    <ul class="clearfix">
+        <!--
+            做一个导航条幅
+            要去除元素与元素间默认存在的空格-->
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+        <li>选项5</li>
+        <li>选项6</li>
+    </ul>
+    <br><br><br><br><br><br>
+
+    <div id="超出显示界限">
+        <div>
+            如果一串字符连续且过于长，那么
+            它将会超出浏览器显示界限
+        </div>
+        <br>
+        <div id="超出显示界限02">
+            2
+            4
+            33333333333333333333333333333333333333333333333333333333
+            5
+            <br>
+            这是因为系统默认3333是一个整体的单词
+            所以不会自动换行，想要它自动换行加-就可以了
+            <br>
+            6666666666-6666666666666666-66666666-6666666666666666666666666666
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
