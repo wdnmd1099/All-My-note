@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{margin: 0;padding: 0;}
+
+    .box{width: 290px;height: 470px;margin: 100px auto;border: 1px }
+    button { margin-top: 30px;}
+    .box1{width: 270px;height: 450px;margin: 100px auto;padding:20px;border: 1px }
+</style>
+
+</head>
+<body>
+    <script>
+        function one()
+        {
+
+            var otxt1=document.getElementById('txt1').value;
+            var otxt2=document.getElementById('txt2').value;
+           
+        var b=parseFloat(otxt1);
+        var d=parseFloat(otxt2);
+        
+        var QiShui=b*0.01*10000;
+        var JiaoYiFei=d*2;
+        var ZongShu=QiShui+JiaoYiFei+95;
+
+        var QiShui1=b*0.015*10000;
+        var ZongShu1=QiShui1+JiaoYiFei+95;
+
+        var QiShui2=b*0.02*10000;
+        var ZongShu2=QiShui2+JiaoYiFei+95;
+
+        var QiShui3=b*0.03*10000;
+        var ZongShu3=QiShui3+JiaoYiFei+95;
+
+        var YingYeShui=b*0.05*10000;
+        var ChengJian=YingYeShui*0.07;
+        var JiaoYuFei=YingYeShui*0.03;
+        var DFJiaoYuShui=YingYeShui*0.02;
+        var MaiShui=YingYeShui+ChengJian+JiaoYuFei+DFJiaoYuShui+QiShui
+        
+        alert("90平方及以下首套或二套住房的买方税务："+"\n"+"契税1%:  "+QiShui+"元"+"\n"
+        +"交易费：房屋建筑面积2元/平方米："+JiaoYiFei+"元"+"\n"+"登记费：80元/件"
+        +"\n"+"共有证：10元/件"+"\n"+"证件贴花：5元/本"+"\n"+"共计（参考价）为："+ZongShu+"元"+"\n"+"\n"+
+        
+        "卖方满5年且是唯一住房免税"+"\n"
+        
+        +"\n"+"卖方满两年税务："
+        +"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"
+        
+        
+        +"卖方不足2年税务："+"\n"+"5%营业税："+YingYeShui+"元"+"\n"+"营业税额的7%带征城建税："+
+        ChengJian+"元"+"\n"+"营业税额的3%带征教育费附加:"+JiaoYuFei+"元"+"\n"+"营业税额的2%带征广东省地方教育费附加:"+DFJiaoYuShui+"元"+"\n"
+        +"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"+"总数："+MaiShui+"元"
+        );
+        
+
+
+        }
+
+
+
+        function one1()
+        {
+            var otxt1=document.getElementById('txt1').value;
+            var otxt2=document.getElementById('txt2').value;
+           
+        var b=parseFloat(otxt1);
+        var d=parseFloat(otxt2);
+        
+        var QiShui=b*0.01*10000;
+        var JiaoYiFei=d*2;
+        var ZongShu=QiShui+JiaoYiFei+95;
+
+        var QiShui1=b*0.015*10000;
+        var ZongShu1=QiShui1+JiaoYiFei+95;
+
+        var QiShui2=b*0.02*10000;
+        var ZongShu2=QiShui2+JiaoYiFei+95;
+
+        var QiShui3=b*0.03*10000;
+        var ZongShu3=QiShui3+JiaoYiFei+95;
+
+        var YingYeShui=b*0.05*10000;
+        var ChengJian=YingYeShui*0.07;
+        var JiaoYuFei=YingYeShui*0.03;
+        var DFJiaoYuShui=YingYeShui*0.02;
+        var MaiShui=YingYeShui+ChengJian+JiaoYuFei+DFJiaoYuShui+QiShui
+
+        alert("90平方以上属家庭唯一住房的买方税务："+"\n"+"契税1.5%:  "+QiShui1+"元"+"\n"
+        +"交易费：房屋建筑面积2元/平方米："+JiaoYiFei+"元"+"\n"+"登记费：80元/件"
+        +"\n"+"共有证：10元/件"+"\n"+"证件贴花：5元/本"+"\n"+"共计（参考价）为："+ZongShu1+"元"
+
+
+        +"\n"+"\n"+
+        
+        "卖方满5年且是唯一住房免税"+"\n"
+        
+        +"\n"+"卖方满两年税务："+"\n"+"\n"
+        +"\n"+"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"
+        
+        
+        +"卖方不足2年税务："+"\n"+"5%营业税："+YingYeShui+"元"+"\n"+"营业税额的7%带征城建税："+
+        ChengJian+"元"+"\n"+"营业税额的3%带征教育费附加:"+JiaoYuFei+"元"+"\n"+"营业税额的2%带征广东省地方教育费附加:"+DFJiaoYuShui+"元"+"\n"
+        +"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"+"总数："+MaiShui+"元"
+        );
+        }
+
+
+
+
+
+
+
+
+        function one2()
+        {
+            var otxt1=document.getElementById('txt1').value;
+            var otxt2=document.getElementById('txt2').value;
+           
+        var b=parseFloat(otxt1);
+        var d=parseFloat(otxt2);
+        
+        var QiShui=b*0.01*10000;
+        var JiaoYiFei=d*2;
+        var ZongShu=QiShui+JiaoYiFei+95;
+
+        var QiShui1=b*0.015*10000;
+        var ZongShu1=QiShui1+JiaoYiFei+95;
+
+        var QiShui2=b*0.02*10000;
+        var ZongShu2=QiShui2+JiaoYiFei+95;
+
+        var QiShui3=b*0.03*10000;
+        var ZongShu3=QiShui3+JiaoYiFei+95;
+
+        var YingYeShui=b*0.05*10000;
+        var ChengJian=YingYeShui*0.07;
+        var JiaoYuFei=YingYeShui*0.03;
+        var DFJiaoYuShui=YingYeShui*0.02;
+        var MaiShui=YingYeShui+ChengJian+JiaoYuFei+DFJiaoYuShui+QiShui
+
+        alert("90平方以上属家庭二套住房的买方税务："+"\n"+"契税2%:  "+QiShui2+"元"+"\n"
+        +"交易费：房屋建筑面积2元/平方米："+JiaoYiFei+"元"+"\n"+"登记费：80元/件"
+        +"\n"+"共有证：10元/件"+"\n"+"证件贴花：5元/本"+"\n"+"共计（参考价）为："+ZongShu2+"元"
+
+        +"\n"+"\n"+
+        
+        "卖方满5年且是唯一住房免税"+"\n"
+        
+        +"\n"+"卖方满两年税务："+"\n"+"\n"
+        +"\n"+"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"
+        
+        
+        +"卖方不足2年税务："+"\n"+"5%营业税："+YingYeShui+"元"+"\n"+"营业税额的7%带征城建税："+
+        ChengJian+"元"+"\n"+"营业税额的3%带征教育费附加:"+JiaoYuFei+"元"+"\n"+"营业税额的2%带征广东省地方教育费附加:"+DFJiaoYuShui+"元"+"\n"
+        +"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"+"总数："+MaiShui+"元"
+        );
+        
+        }
+
+
+
+
+
+function one3()
+{
+    var otxt1=document.getElementById('txt1').value;
+            var otxt2=document.getElementById('txt2').value;
+           
+        var b=parseFloat(otxt1);
+        var d=parseFloat(otxt2);
+        
+        var QiShui=b*0.01*10000;
+        var JiaoYiFei=d*2;
+        var ZongShu=QiShui+JiaoYiFei+95;
+
+        var QiShui1=b*0.015*10000;
+        var ZongShu1=QiShui1+JiaoYiFei+95;
+
+        var QiShui2=b*0.02*10000;
+        var ZongShu2=QiShui2+JiaoYiFei+95;
+
+        var QiShui3=b*0.03*10000;
+        var ZongShu3=QiShui3+JiaoYiFei+95;
+
+        var YingYeShui=b*0.05*10000;
+        var ChengJian=YingYeShui*0.07;
+        var JiaoYuFei=YingYeShui*0.03;
+        var DFJiaoYuShui=YingYeShui*0.02;
+        var MaiShui=YingYeShui+ChengJian+JiaoYuFei+DFJiaoYuShui+QiShui
+        alert("第三套房或以上的买方税务："+"\n"+"契税3%:  "+QiShui3+"元"+"\n"
+        +"交易费：房屋建筑面积2元/平方米："+JiaoYiFei+"元"+"\n"+"登记费：80元/件"
+        +"\n"+"共有证：10元/件"+"\n"+"证件贴花：5元/本"+"\n"+"共计（参考价）为："+ZongShu3+"元"
+
+        +"\n"+"\n"+
+        
+        "卖方满5年且是唯一住房免税"+"\n"
+        
+        +"\n"+"卖方满两年税务："
+        +"\n"+"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"
+        
+        
+        +"卖方不足2年税务："+"\n"+"5%营业税："+YingYeShui+"元"+"\n"+"营业税额的7%带征城建税："+
+        ChengJian+"元"+"\n"+"营业税额的3%带征教育费附加:"+JiaoYuFei+"元"+"\n"+"营业税额的2%带征广东省地方教育费附加:"+DFJiaoYuShui+"元"+"\n"
+        +"1.0%个人所得税:"+QiShui+"元"+"\n"+"\n"+"总数："+MaiShui+"元"
+        );
+}
+
+
+function one4()
+{
+            var otxt1=document.getElementById('txt1').value;
+            var otxt2=document.getElementById('txt2').value;
+
+            var b=parseFloat(otxt1);
+            var d=parseFloat(otxt2);
+
+            var QiShui4=b*0.03*10000;
+            var YinHuaShui=b*0.0005*10000;
+            var JiaoYiFei=d*2;
+            var Mai2fang=QiShui4+YinHuaShui+JiaoYiFei+550+10+5;
+
+            
+
+            alert(
+                "买方税务："+"\n"+"契税3%："+QiShui4+"元"+"\n"+"印花税0.05%："+YinHuaShui+"元"+"\n"+
+                "交易费:2元/平方米:"+JiaoYiFei+"元"+"\n"+"登记费：550元/件"+"\n"+"共有证：10元/件"
+                +"\n"+"按证件贴花每本5元"+"\n"+"\n"+"共计:"+Mai2fang+"元"
+            );
+}
+
+
+
+function one5()
+{
+            var otxt1=document.getElementById('txt1').value;
+            var otxt2=document.getElementById('txt2').value;
+            var otxt3=document.getElementById('txt3').value;
+
+
+            var b=parseFloat(otxt1);
+            var d=parseFloat(otxt2);
+            var f=parseFloat(otxt3);
+
+            var YingYeShui1=f*0.05*10000;
+            var ChengJian1=f*0.05*10000*0.07;
+            var JiaoYuFei1=f*0.05*10000*0.03;
+            var DFJiaoYuShui1=f*0.05*10000*0.02;
+            var QiShui5=b*0.01*10000;
+            var YinHuaShui1=b*0.0005*10000;
+            var TDZengZhi=b*0.05*10000;
+            var Mai4Shui=YingYeShui1+ChengJian1+JiaoYuFei1+DFJiaoYuShui1+QiShui5+YingYeShui1+TDZengZhi;
+
+
+
+    alert("卖方税务："+"\n"+"销售收入减原购入价的余额的5%征营业税："+"\n"+YingYeShui1+"元"+"\n"+"营业税额的7%带征城建税:"+
+        ChengJian1+"元"+"\n"+"营业税额的3%带征教育费附加:"+JiaoYuFei1+"元"+"\n"+"营业税额的2%带征广东省地方教育费附加:"+DFJiaoYuShui1+"元"+"\n"
+        +"1.0%个人所得税:"+QiShui5+"元"+"\n"+"印花税0.05%:"+YinHuaShui1+"元"+"土地增值税5%:"+TDZengZhi+"元"+"\n"+"总数："+Mai4Shui+"元");
+            
+}
+    </script>
+
+
+<div class="box">
+   
+
+<span>价格（单位：万）<input type="text" id="txt1"></span>
+
+<span>面积（单位：方）<input type="text" id="txt2"></span>
+
+<span>销售收入减原购入价（商铺用）<input type="text" id="txt3"></span>
+  
+    <div class="box1">
+
+
+
+<button id="btn" ontouchend="one()" >90平方及以下首套或二套住房的买方税务</button>
+<button id="btn" ontouchstart="one1()" >90平方以上属家庭唯一住房的买方税务</button>
+<button id="btn" ontouchstart="one2()" >90平方以上属家庭二套住房的买方税务</button>
+<button id="btn" ontouchstart="one3()" >第三套房或以上的买方税务</button>
+<button id="btn" ontouchstart="one4()" >买方商铺，车房,车位</button>
+<button id="btn" ontouchstart="one5()" >卖方商铺，车房,车位</button>
+</div>
+</div>
+</body>
+</html>
