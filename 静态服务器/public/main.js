@@ -1,0 +1,1 @@
+console.log('main.js已启动')
