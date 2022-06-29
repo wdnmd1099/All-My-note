@@ -1,0 +1,11 @@
+#Fang{
+    border: 5px solid gray;
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 200px;
+    transition: 1s;
+}
+#Fang.active{
+    transform: translateX(15vw);
+}

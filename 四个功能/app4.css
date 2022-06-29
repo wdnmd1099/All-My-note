@@ -1,0 +1,21 @@
+#app4 {
+}
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
+#Yuan{
+    border: 1px solid blue;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+   
+}
+
+#Yuan.active{
+    animation: change 1s infinite alternate linear;
+  }

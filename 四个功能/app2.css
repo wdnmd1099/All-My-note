@@ -1,0 +1,23 @@
+#warp{
+    display: flex;
+}
+
+#n1{
+    display: flex;
+    border: 1px solid gray;
+    width: 50%;
+    height: 4vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+#n2{
+    display: flex;
+    border: 1px solid gray;
+    width: 50%;
+    height: 4vw;
+    justify-content: center;
+    align-items: center;
+   
+}
+

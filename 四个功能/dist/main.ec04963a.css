@@ -1,0 +1,123 @@
+#app1 {
+    display: flex;
+    border: 1px solid red;
+    width: 50vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+#jjcc{
+    position: relative;
+    display: flex;
+    margin-left: -10px;
+}
+#jjcc>button{
+    font-size: 50px;
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+
+#jjcc>span{
+    position: absolute;
+    margin-top: -40px;
+}
+#shuZi{
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 200px;
+    font-size: 20px;
+    border: 2px solid green;
+}
+
+#jia{
+    position: absolute;
+    margin-left: 45px;
+}
+
+
+#jian{
+    position: absolute;
+    margin-left: 155px;
+}
+
+
+#cheng{
+    position: absolute;
+    margin-left: 265px;
+}
+
+#chu{
+    position: absolute;
+    margin-left: 375px;
+}
+#warp{
+    display: flex;
+}
+
+#n1{
+    display: flex;
+    border: 1px solid gray;
+    width: 50%;
+    height: 4vw;
+    justify-content: center;
+    align-items: center;
+    
+}
+#n2{
+    display: flex;
+    border: 1px solid gray;
+    width: 50%;
+    height: 4vw;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#Fang{
+    border: 5px solid gray;
+    height: 100px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 200px;
+    transition: 1s;
+}
+#Fang.active{
+    transform: translateX(15vw);
+}#app4 {
+}
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
+#Yuan{
+    border: 1px solid blue;
+    border-radius: 50%;
+    width: 30vw;
+    height: 30vw;
+   
+}
+
+#Yuan.active{
+    animation: change 1s infinite alternate linear;
+  }body{
+    overflow: hidden;
+  }
+  body > .page{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body > .page > section{
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid grey;
+  }
+  * {box-sizing: border-box;}
+*:before, *:after {box-sizing: border-box;}
+* {margin: 0; padding: 0;}
+ul, ol { list-style: none; }
